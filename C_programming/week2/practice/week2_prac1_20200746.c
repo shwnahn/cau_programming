@@ -1,16 +1,12 @@
 #include <stdio.h>
 
 int main(void) {
-    float number = 123.456;
-    int number2 = 200;
-    
-    printf("%f\n", number);
-    printf("%.2f\n", number);
-    printf("%7.1f\n", number);
 
-    printf("%d\n", number2);
-    printf("%10.1d\n", number2);
-    
-    return 0;
-
+    for (int i = 2; i < 10; i++){
+        printf("%d times table: ", i);
+        for (int j = 1; j < 10; j++){
+            printf("%2d * %2d = %2d | ", i, j, i*j);
+        }
+        printf("\n");
+    }
 }
