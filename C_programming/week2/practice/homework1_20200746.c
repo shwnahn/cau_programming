@@ -17,7 +17,7 @@ int main(void) {
                 scanf("%d", &number);
                 // 밑변과 높이가 n인 직각삼각형, *문자
                 for (int i = 0; i < number; i++) { // 높이
-                    for (int j = 0; j <= number - i; j++) { // 밑변
+                    for (int j = 1; j <= number - i - 1; j++) { // 밑변
                         printf(" ");
                     }
 
