@@ -31,8 +31,23 @@ int main(void) {
             case 2:
                 printf("Enter a number: ");
                 scanf("%d", &number);
-                printf("# input is 2\n");
                 // 가로세로가 2*n-1인 십자가, +문자
+                for (int i = 0; i < number - 1; i++) {//높이
+                    for (int l = 0; l < number - 1; l++){
+                        printf("%s", " ");
+                    }
+                    printf("%s", "+\n");
+                }
+                for (int j = 0; j < number * 2 - 1; j++){
+                    printf("%s", "+");
+                }
+                printf("\n");
+                for (int k = 0; k < number - 1; k++) {//높이
+                    for (int l = 0; l < number - 1; l++){
+                        printf("%s", " ");
+                    }
+                    printf("%s", "+\n");
+                }
                 break;
             case 3:
                 printf("Enter a number: ");
