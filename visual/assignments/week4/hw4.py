@@ -1,15 +1,17 @@
 # 사용자 입력
-user_input = input("스페이스바로 구분하여, 점 5개를 입력하세요: ")
-points = user_input.split(" ")
+points = []
+for i in range(5):
+   x, y = input(f"x,y좌표를 쉼표로 구분하여 점 5개를 입력하세요 ({i}/5): ").split(',')
+   x = int(x)
+   y = int(y)
+   points.append((x, y))
+# print(points)
 
-user_input_f = input("기준점 1개를 입력하세요: ")
-
-query = list(user_input_f)
-
-# points = [
-#     (0, 0), (0, 0)
-# ]
-# query = [0, 0]
+x, y = input("x,y좌표를 쉼표로 구분하여 기준점 1개를 입력하세요: ").split(',')
+x = int(x)
+y = int(y)
+query = [x, y]
+# print(query)
 
 # 무게중심과의 거리 구하기
 distances = []
@@ -27,4 +29,5 @@ if min_distance == 99999999:
     print("죄다 똑같습니다...")
 else:
     result_index = distances.index(min_distance)
+    print("가장 가까운 점은...")
     print(points[result_index])
