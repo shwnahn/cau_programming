@@ -6,7 +6,7 @@
 
 int main(void) {
     int array[5] = { 22, 11, 26, 12, 23 };
-    int *arr_p = &array[0];     // 배열의 시작(0번째) 값의 주소를 할당
+    int *arr_p = array;   // 배열의 시작(0번째) 값의 주소를 할당, &array[0];
     int i;
 
     // 배열의 인덱스로 접근

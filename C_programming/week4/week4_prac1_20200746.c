@@ -8,10 +8,10 @@ int input_N(void){
 }
 
 // 각 배열의 원소에 N을 더하는 함수
-void sum_to_array(int *arr_p, int number) {
+void sum_to_array(int *arr_p, int N) {
     int i, j;
     for(i = 0; i < 5; i++)
-        arr_p[i] += number;
+        arr_p[i] += N;
 }
 
 // 각 배열의 원소를 출력하는 함수

@@ -13,13 +13,13 @@ int main(void) {
     arr_p = array;
     printf("==== increasing and then pointing ====\n");
     for (i = 0; i < 10; i++)
-        printf("%d\n", *(arr_p++));
+        printf("%d\n", *(arr_p++)); // 100, 200 ...
 
     // 증감연산자가 괄호 밖에 있으면?
     arr_p = array;
     printf("==== pointing and then increasing ====\n");
     for (i = 0; i < 10; i++)
-        printf("%d\n", (*arr_p)++);
+        printf("%d\n", (*arr_p)++); // 100, 101, 102, ...
 
     // 다시 한 번, 증감연산자가 괄호 안에 있으면?
     arr_p = array;
