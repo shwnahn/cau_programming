@@ -46,6 +46,7 @@ int main(void) {
     int array[5] = { 22, 11, 26, 12, 23 };
 
     /* 모든 원소에 100 덧셈 연산 후 모든 원소를 출력하려면? */
+
     // op_to_arr에게 덧셈 연산(myadd)과 원소 출력(print_arr)을 수행하라고 요청
     op_to_arr(array, 5, 100, myadd, print_arr);
 
@@ -54,8 +55,10 @@ int main(void) {
     op_to_arr(array, 5, 10, mysub, print_sum_of_elements);
 
     /* TODO: 모든 원소에 2 곱셈 연산 후 모든 원소를 출력하려면? */
-
+    op_to_arr(array, 5, 2, mymul, print_arr)
+    
     /* TODO: 모든 원소에 7 나눗셈 연산 후 원소의 합을 출력하려면? */
+    op_to_arr(array, 5, 7, mydiv, print_sum_of_elements);
 
     return 0;
 }
