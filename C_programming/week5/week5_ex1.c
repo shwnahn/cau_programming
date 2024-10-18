@@ -1,21 +1,21 @@
 /*
- * Æ÷ÀÎÅÍ¸¦ ÆÄ¶ó¹ÌÅÍ·Î °®´Â ÇÔ¼öÀÇ µ¿ÀÛ
+ * í¬ì¸í„°ë¥¼ íŒŒë¼ë¯¸í„°ë¡œ ê°–ëŠ” í•¨ìˆ˜ì˜ ë™ìž‘
  */
 
 #include <stdio.h>
 
-// Æ÷ÀÎÅÍ·Î ÁÖ¼Ò °ªÀ» ¹Þ¾Æ¿À°í ÀÖ´Ù. ÂüÁ¶¿¡ ÀÇÇÑ È£ÃâÀÌ°Ú³×?
+// í¬ì¸í„°ë¡œ ì£¼ì†Œ ê°’ì„ ë°›ì•„ì˜¤ê³  ìžˆë‹¤. ì°¸ì¡°ì— ì˜í•œ í˜¸ì¶œì´ê² ë„¤?
 void sum_to_arr(int *arr, int N) {
     int i;
     for (i = 0; i < 5; i++)
-        arr[i] += N;    // Æ÷ÀÎÅÍ¸¦ ¹è¿­Ã³·³ Á¢±ÙÇÒ ¼ö ÀÖÁö!
+        arr[i] += N;    // í¬ì¸í„°ë¥¼ ë°°ì—´ì²˜ëŸ¼ ì ‘ê·¼í•  ìˆ˜ ìžˆì§€!
 }
 
 void print_arr(int *arr) {
     int i;
     printf("arr:");
     for (i = 0; i < 5; i++)
-        printf("%d ", arr[i]);  // Æ÷ÀÎÅÍ¸¦ ¹è¿­Ã³·³ Á¢±ÙÇÒ ¼ö ÀÖÁö!
+        printf("%d ", arr[i]);  // í¬ì¸í„°ë¥¼ ë°°ì—´ì²˜ëŸ¼ ì ‘ê·¼í•  ìˆ˜ ìžˆì§€!
     printf("\n");
 }
 
@@ -23,9 +23,9 @@ int main(void) {
     int array[5] = { 22, 11, 26, 12, 23 };
 
     print_arr(array);
-    // ¹è¿­ÀÇ ÀÌ¸§Àº °ð ÁÖ¼Ò! ÁÖ¼Ò¸¦ ³Ñ°ÜÁÖ´Â °Å´Ï±î ÂüÁ¶¿¡ ÀÇÇÑ È£ÃâÀÌ°ÚÁö?
+    // ë°°ì—´ì˜ ì´ë¦„ì€ ê³§ ì£¼ì†Œ! ì£¼ì†Œë¥¼ ë„˜ê²¨ì£¼ëŠ” ê±°ë‹ˆê¹Œ ì°¸ì¡°ì— ì˜í•œ í˜¸ì¶œì´ê² ì§€?
     sum_to_arr(array, 10);
-    // ±×·¯´Ï±î ¿øº» ¹è¿­ÀÌ º¯°æµÇ°ÚÁö?
+    // ê·¸ëŸ¬ë‹ˆê¹Œ ì›ë³¸ ë°°ì—´ì´ ë³€ê²½ë˜ê² ì§€?
     print_arr(array);
 
     return 0;
