@@ -4,7 +4,7 @@ int main(void) {
     int score[2][3] = {{0x30, 0x44, 0x67}, {0x87, 0x43}};
 
     // 포인터배열을 사용하여 2차원 배열을 가리키기 위해서는?
-    int *p_arr[2] = {score[0], score[1]};
+    int *p_arr[2] = { score[0], score[1] };
 
     // 배열포인터를 사용하여 2차원 배열을 가리키기 위해서는?
     int (*arr_p)[3] = score;

@@ -13,15 +13,15 @@ int main(void) {
     printf("sizeof(int_p_arr):%lu\n", sizeof(int_p_arr));
 
     /* TODO:int배열 포인터와 int배열 포인터배열 */
-    int *int_arr_p = NULL;     // TODO:수정
-    int *int_arr_p_arr = NULL; // TODO:수정
+    int (*int_arr_p)[3];
+    int (*int_arr_p_arr[3])[3];
     printf("===== int array pointer & int array pointer array =====\n");
     printf("sizeof(int_arr_p):%lu\n", sizeof(int_arr_p));
     printf("sizeof(int_arr_p_arr):%lu\n", sizeof(int_arr_p_arr));
 
     /* TODO:함수포인터와 함수포인터배열 */
-    int *func_p = NULL;        // TODO:수정
-    int *func_p_arr = NULL;    // TODO:수정
+    double (*func_p)(int, int);
+    double (*func_p_arr[3])(int, int);
     printf("===== function pointer & function pointer array =====\n");
     printf("sizeof(func_p):%lu\n", sizeof(func_p));
     printf("sizeof(func_p_arr):%lu\n", sizeof(func_p_arr));
