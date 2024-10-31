@@ -23,7 +23,7 @@ int main(void) {
 
     // 포인터접근(*) 후 멤버접근(.)을 한 번에 수행할 수있다. 포인터의 멤버에 접근 (->)
     printf("===== Access member of pointer directly =====\n");
-    printf("Name: %s\n", p->name);
+    printf("Name: %s\n", p->name); // == (*p).name
     printf("Student ID: %d\n", p->studentid);
     printf("Grade: %.1f\n", p->grade);
 
