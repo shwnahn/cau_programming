@@ -8,8 +8,6 @@ typedef struct _student_t {
     double math;
 } student_t;
 
-int max_score_idx();
-
 int main(void){
     // 크기 10의 배열 students 생성
     student_t students[10];
@@ -41,14 +39,11 @@ int main(void){
         fscanf(fp, "%s %lf %lf %lf", students[i].name, &students[i].kor, &students[i].eng, &students[i].math);
     }
 
-    // for (int i = 0; i < N; i++){
-    //     printf("%s %.2lf %.2lf %.2lf\n", students[i].name, students[i].kor, students[i].eng, students[i].math);
-    // }
+    fclose(fp);
 
     // N개 데이터 입력 후, 총점 가장 높은 학생 이름 출력
     int max_idx = 0;
     double max_score_sum = 0.0;
-    
     for(int i = 0; i < N; i++){
         double score_sum = students[i].kor + students[i].eng + students[i].math;
         if(score_sum >= max_score_sum){
@@ -57,9 +52,6 @@ int main(void){
         }
     }
     printf("%s", students[max_idx].name);
-
-    
-    // printf("%s\n", students[max_idx].name);
 
     return 0;
 }
