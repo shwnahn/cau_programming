@@ -45,6 +45,8 @@ void merge_sort (int *arr, int N) {
     free(temp_arr);
 }
 
+// 4, 2, 5, 1, 3
+// 4, 2 / 5, 1, 3
 
 
 int main(void) {
