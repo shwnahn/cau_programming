@@ -12,7 +12,6 @@ typedef struct _student_t {
 
 // 학생 이름 출력 함수
 
-
 int main(void){
     // 파일에 저장된 학생 정보 입력받기
     FILE *fp;

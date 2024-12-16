@@ -2,6 +2,6 @@
 #include "wifi.h"
 #include "wifi_format.h"
 
-void wifi_rx(char *data, int *len) {
+void wifi_rx(wifi_format_t *data, int *len) {
     printf("wifi_rx: do something blah~ blah~\n");
 }
