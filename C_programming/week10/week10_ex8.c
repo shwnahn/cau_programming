@@ -26,3 +26,11 @@ int main() {
         printf("Success to close file\n");
     return 0;
 }
+
+// 실패 시 
+// fopen -> NULL
+// fclose -> EOF
+
+// fscanf -> NULL . 개수
+// fgets -> EOF . 주소.
+// fread -> 0
