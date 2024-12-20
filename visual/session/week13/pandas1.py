@@ -15,6 +15,7 @@ import numpy as np
 
 data = pd.DataFrame(np.random.random((4,4)), columns = ['A', 'B', 'C', 'D'])
 
+print(data)
 # for index in range(data.shape[1]):
 #     column = data.columns[index]
 #     print(data[column])
