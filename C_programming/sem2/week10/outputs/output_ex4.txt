@@ -1,0 +1,12 @@
+Hello, World!
+This year is 2024
+Sum of 1 to 1 is 1
+Sum of 1 to 2 is 3
+Sum of 1 to 3 is 6
+Sum of 1 to 4 is 10
+Sum of 1 to 5 is 15
+Sum of 1 to 6 is 21
+Sum of 1 to 7 is 28
+Sum of 1 to 8 is 36
+Sum of 1 to 9 is 45
+Sum of 1 to 10 is 55
